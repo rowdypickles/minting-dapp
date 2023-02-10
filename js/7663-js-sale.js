@@ -203,7 +203,7 @@ connect();
 
 document.getElementById('connect_button').onclick = connect;
 document.getElementById('wl_check').onclick = wl_check;
-document.getElementById('mint_button').onclick = mint;
+document.getElementById('mint_button').onclick = whitelistMint;
 
 const signatures = [
   '0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
