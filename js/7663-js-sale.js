@@ -192,7 +192,7 @@ const connect = async (e)=> {
 
     	  //document.getElementById("tokens_available").innerHTML = "SOLD OUT";
 	  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "1000";
-	  document.getElementById("price").innerHTML = "COST 0.01Ξ EACH";
+	  document.getElementById("price").innerHTML = "COST 0.02Ξ EACH";
 	  }
     else { document.getElementById("connect_button").innerHTML = "Connect wallet"; }
   }
