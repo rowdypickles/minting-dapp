@@ -187,7 +187,7 @@ const connect = async (e)=> {
 
       if (paused) { document.getElementById("phase").innerHTML = "CONTRACT IS PAUSED"; }
 	  else { if (WL) { document.getElementById("phase").innerHTML = "WHITELIST MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.01Ξ EACH"; }
-	  else { document.getElementById("phase").innerHTML = "PUBLIC MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.03Ξ EACH"; }
+	  else { document.getElementById("phase").innerHTML = "PUBLIC MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.02Ξ EACH"; }
 	  }
 
     	  //document.getElementById("tokens_available").innerHTML = "SOLD OUT";
@@ -203,7 +203,7 @@ connect();
 
 document.getElementById('connect_button').onclick = connect;
 document.getElementById('wl_check').onclick = wl_check;
-document.getElementById('mint_button').onclick = mint;
+document.getElementById('mint_button').onclick = whitelistMint;
 
 const signatures = [
   '0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
