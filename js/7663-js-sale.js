@@ -186,13 +186,13 @@ const connect = async (e)=> {
       	  costWL = await contract.methods.costWL().call();
 
       if (paused) { document.getElementById("phase").innerHTML = "CONTRACT IS PAUSED"; }
-	  else { if (WL) { document.getElementById("phase").innerHTML = "WHITELIST MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.02Ξ EACH"; }
-	  else { document.getElementById("phase").innerHTML = "PUBLIC MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.02Ξ EACH"; }
+	  else { if (WL) { document.getElementById("phase").innerHTML = "WHITELIST MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.005Ξ EACH"; }
+	  else { document.getElementById("phase").innerHTML = "PUBLIC MINT | MAX " + maxPerTx + " PER WALLET"; document.getElementById("price").innerHTML = "COST 0.005Ξ EACH"; }
 	  }
 
     	  //document.getElementById("tokens_available").innerHTML = "SOLD OUT";
 	  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "1000";
-	  document.getElementById("price").innerHTML = "COST 0.02Ξ EACH";
+	  document.getElementById("price").innerHTML = "COST 0.005Ξ EACH";
 	  }
     else { document.getElementById("connect_button").innerHTML = "Connect wallet"; }
   }
