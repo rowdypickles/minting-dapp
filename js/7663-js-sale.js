@@ -38,7 +38,7 @@ window.addEventListener('load', async () => {
     const supply = await contract1.methods.totalSupply().call();
     console.log(supply);
 
-    document.getElementById("tokens_available").innerHTML = supply + " / " + 1000;
+    document.getElementById("tokens_available").innerHTML = supply + " / " + 200;
     })
 */
 
@@ -115,7 +115,7 @@ const mint = async (e)=> {
           {
           alert("Error: " + e.message);
           console.log("Error: ",e);
-          document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "1000";
+          document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "200";
           }
         }
     }     
@@ -160,7 +160,7 @@ const whitelistMint = async (e)=> {
 			  {
         alert("Error: " + e.message);
         console.log("Error: ",e);
-			  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "1000";
+			  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "200";
 			  }
 		}
 	}
@@ -191,7 +191,7 @@ const connect = async (e)=> {
 	  }
 
     	  //document.getElementById("tokens_available").innerHTML = "SOLD OUT";
-	  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "1000";
+	  document.getElementById("tokens_available").innerHTML = totalSupply + " / " + "200";
 	  document.getElementById("price").innerHTML = "COST 0.005Ξ EACH";
 	  }
     else { document.getElementById("connect_button").innerHTML = "Connect wallet"; }
